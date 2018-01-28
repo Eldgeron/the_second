@@ -1,0 +1,255 @@
+/* GENERAL STYLES */
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8em;
+	line-height: 1.5em;
+	color: #232323;
+	font-weight: 300;
+	background-color: #f5f6f8;
+}
+a {
+	display: inline-block;
+	vertical-align: top;
+	color: inherit;
+	text-decoration: none;
+}
+/* buttons */
+.button {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #000000;
+	color: #ffffff;
+	line-height: 2.2rem;
+	padding: 0 1rem;
+}
+.button:visited {
+	background-color: #000000;
+	color: #ffffff;
+}
+.button:hover,
+.button:active {
+	background-color: #323232;
+	color: #ffffff;
+}
+
+.button.link {
+	background-color: transparent;
+	color: #232323;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+}
+
+/* titles */
+
+/* lists */
+
+.list li{
+	display: inline-block;
+	width: calc(27% - 4px);
+	vertical-align: top;
+	text-align: center;
+	padding: 3em 1.5%;
+	margin: 4em 1.5% 0 1.5%;
+
+}
+
+.list li p{
+	height: 6em;
+	overflow: hidden;
+	margin-bottom: 1.4em;
+}
+
+/* HEADER */
+#main-header {
+	min-height: 100vh;
+	height: 100vh;
+	background: url(../img/bgs/header_bg.png) no-repeat 0 0;
+	background-size: cover;
+	position: relative;
+}
+.logo-nav-wrap {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 70%;
+	padding: 2em 15%;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.logo-wrap {
+	display: inline-block;
+	vertical-align: top;
+	width: calc(10% - 4px);
+}
+.nav-wrap {
+	display: inline-block;
+	vertical-align: top;
+	width: calc(90% - 4px);
+	text-align: right;
+}
+nav {
+	display: inline-block;
+	vertical-align: top;
+}
+nav a {	
+	text-transform:  uppercase;	
+	font-size: 0.7rem;	
+	line-height: 2.2rem;	
+	color: rgba(35,35,35,0.5);	
+	margin: 0 1em;
+}
+nav a:hover, 
+nav a:active {
+	color: #232323;
+}
+
+.title {
+	text-transform: uppercase;
+    font-size: 4em;
+    line-height: 1.2em;
+    font-weight: 200;
+    letter-spacing: 7px;
+    margin-bottom: 0.3em;
+}
+.subtitle {
+	text-transform: uppercase;
+    font-size: 0.7em;
+    line-height: 1em;
+    letter-spacing: 1.5px;
+    text-indent: 6px;
+    margin-bottom: 1.6em;
+}
+
+.list_title {
+	text-transform: uppercase;
+	font-size: 0.9em;
+	line-height: 1.5em;
+	font-weight: 600;
+	margin-bottom: 1.6em;
+}
+
+
+.list_title.lable:after {
+	content: "New";
+	display: inline-block;
+	background-color: #26e6e6;
+	vertical-align: middle;
+	border-radius: 20px;
+	color:#fff;
+	font-size: 0.7em;
+	text-align: center;
+	text-indent: 0;
+	letter-spacing: 0;
+	line-height: 3em;
+	padding: 0 15px;
+}
+.moto {
+	position: relative;
+    height: calc(100vh - 6em);
+    top: 6em;
+    left: 0;
+}
+.moto-wrp {
+	position: absolute;
+    width: 30em;
+    top: 22vh;
+    left: 23vw;
+}
+
+section{
+	padding: 7em 14vw;
+}
+
+.list.iconed li:before{
+	font-family: FontAwesome;
+    font-size: 4em;
+    color: #bbb;
+    display: inline-block;
+    margin-bottom: 0.6em;
+    height: 0.6em;
+}
+
+.list.serve li:last-child:before{
+	content: "\f25b";
+}
+
+.list.serve li:first-child:before{
+	content: "\f003";
+}
+
+
+.list.serve li.icon_image:before{
+	content: "\f03e";
+}
+
+.list.serve li.icon_image:before{
+	transition: color 1s linear;
+}
+
+.list.iconed li.icon_website:before {
+	content: "\f2d0";
+}
+
+.gallery-list li {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+.button-box {
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5);
+
+    display: none;
+}
+.gallery-list li:hover .button-box {
+	display: block;
+}
+.button-box:before {
+	content: '';
+    width: 1px;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block; 
+}
+.button-box .button {
+	vertical-align: middle;
+}
+
+/* ADDITIONAL SERVICES */
+
+#additional-servises {
+	padding: 0;
+	background: url(../img/bgs/services_bg.jpg) no-repeat 0 0;
+	background-size: cover;
+	text-align: right;
+}
+
+.list-box {
+	display: inline-block;
+	vertical-align: top;
+	background-color: #fff;
+	min-width: calc(28vw - 50px);
+	width: calc(28vw - 50px);
+	padding: 25px;
+	margin: 6em 5vw 0 0vw;
+}
+
+.list-box .list li {
+	display: block;
+	width: calc(100% - 2em);
+	text-align: left;
+	padding: 0;
+	margin: 1em;
+}
+.list_wrap{
+	display: inline-block;
+	vertical-align: top;
+	width: calc(100% - 6em);
+}
