@@ -1,0 +1,24 @@
+.disable {
+filter: grayscale (50%);
+pointer-event:none;
+cursor:default;
+}
+
+img {
+width: 100%;
+height:100%;
+object-fit: cover;
+}
+
+for flex-kids use flex-basis as width. Include borders, pd and mg.
+
+gallery in fjord - on Grids
+
+tinypng.com - img compressor
+
+grid calculator
+
+check in validator
+
+one style.css - with diferent adress
+
